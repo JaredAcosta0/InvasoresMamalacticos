@@ -1,0 +1,49 @@
+html{
+	background-color: rgb(39, 39, 39);
+	font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+	padding-top: 8rem;
+	color: ghostwhite;
+}
+
+.center{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.resultados{
+	display: flex;
+  	justify-content: center;
+}
+
+.grid {
+	background-color: ghostwhite;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.invader {
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+.shooter {
+	background-color: rgb(32, 138, 32);
+}
+
+.laser {
+	background-color: red;
+}
+
+.boom {
+	background-color: red;
+}
