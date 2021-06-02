@@ -19,7 +19,8 @@ h1{
 }
 
 .grid {
-	background-color: ghostwhite;
+	background: #a945c7;
+    box-shadow: 0 0 5px #a945c7, 0 0 20px #a945c7, 0 0 40px #a945c7;
 	width: 300px;
 	height: 300px;
 	display: flex;
@@ -32,12 +33,12 @@ h1{
 }
 
 .invader {
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(120, 233, 125);
 	border-radius: 10px;
 }
 
 .shooter {
-	background-color: rgb(32, 138, 32);
+	background-color: rgb(220, 240, 107);
 }
 
 .laser {
