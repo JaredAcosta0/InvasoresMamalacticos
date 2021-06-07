@@ -86,22 +86,23 @@ function movimientoInvader() {
   
   //Casos......
   if (cuadrados[disparador].classList.contains('invader', 'shooter')){
-    cambio.innerHTML = '<div style="padding-top: 45vh;" class="center"> <a class="btn-neon" href="../nivel.html"><span id="span1"></span><span id="span2"></span><span id="span3"></span><span id="span4"></span>GAME OVER</a></div>';
-    clearInterval(invadersId);
+    cambio.innerHTML = '<div style="padding-top: 45vh;" class="center"> <a class="btn-neon" href="../nivel.html"><span id="span1"></span><span id="span2"></span><span id="span3"></span><span id="span4"></span>GAME OVER</a></div>'
+    clearInterval(invadersId)
   }
 
   for (let i = 0; i < aliniacionIn.length; i++) {
     if(aliniacionIn[i] > (cuadrados.length)) {
-      cambio.innerHTML = '<div style="padding-top: 45vh;" class="center"> <a href="../nivel.html" class="btn-neon"><span id="span1"></span><span id="span2"></span><span id="span3"></span><span id="span4"></span>GAME OVER</a></div>';
+      cambio.innerHTML = '<div style="padding-top: 45vh;" class="center"> <a href="../nivel.html" class="btn-neon"><span id="span1"></span><span id="span2"></span><span id="span3"></span><span id="span4"></span>GAME OVER</a></div>'
       clearInterval(invadersId)
     }
   }
+  
   if (alienEliminado.length === aliniacionIn.length) {
-    resultados.innerHTML = 'YOU WIN'
+    cambio.innerHTML = '<div style="padding-top: 45vh;" class="center"> <a href="../start.html" class="btn-neon"><span id="span1"></span><span id="span2"></span><span id="span3"></span><span id="span4"></span>YOU WIN</a></div>'
     clearInterval(invadersId)
   }
 }
-invadersId = setInterval(movimientoInvader, 100)
+invadersId = setInterval(movimientoInvader, 150) //Velocidad.....
 
 // disparo------
 function shoot(e) {
@@ -125,9 +126,7 @@ function shoot(e) {
       res++
       resultados.innerHTML = res
       console.log(alienEliminado)
-
     }
-
   }
   switch(e.key) {
     case 'ArrowUp':

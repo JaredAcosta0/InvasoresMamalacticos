@@ -4,7 +4,6 @@ html{
 }
 
 h1{
-	padding-top: 8rem;
 	color: ghostwhite;
 }
 
@@ -29,9 +28,15 @@ h1{
   	justify-content: center;
 }
 
+.otro{
+	display: flex;
+  	justify-content: center;
+}
+
 .grid {
 	background: #a945c7;
     box-shadow: 0 0 5px #a945c7, 0 0 20px #a945c7, 0 0 40px #a945c7;
+    border-radius: 4px;
 	width: 300px;
 	height: 300px;
 	display: flex;
@@ -44,20 +49,26 @@ h1{
 }
 
 .invader {
-	background-color: rgb(120, 233, 125);
-	border-radius: 10px;
+	background-color: rgb(60, 226, 255);
+    box-shadow: 0 0 10px #04ccd3, 0 0 10px #04ccd3, 0 0 10px #04ccd3;
+	border-radius: 7px;
 }
 
 .shooter {
 	background-color: rgb(220, 240, 107);
+    box-shadow: 0 0 20px #efff61, 0 0 20px #efff61, 0 0 20px #efff61;
+    border-radius: 3px;
 }
 
 .laser {
-	background-color: red;
+	background-color: #60f17f;
+    box-shadow: 0 0 15px #60f17f, 0 0 15px #60f17f, 0 0 15px #60f17f;
+    border-radius: 10px;
 }
 
 .boom {
 	background-color: red;
+    box-shadow: 0 0 20px #ff0000, 0 0 20px #ff0000, 0 0 20px #ff0000;
 }
 
 .center{
